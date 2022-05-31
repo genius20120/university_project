@@ -1,0 +1,11 @@
+version: "3"
+services:
+  postgres:
+    image: postgres
+    hostname: localhost
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USERNAME: user
+      POSTGRES_PASSWORD: user
+    ports:
+      - "5436:5432"
